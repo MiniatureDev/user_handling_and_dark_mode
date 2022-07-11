@@ -1,0 +1,25 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "meta data for client side develeopment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "framer-motion": "^6.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
