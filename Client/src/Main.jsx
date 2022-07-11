@@ -1,12 +1,14 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import Header from "../layout/Header"
 
 function Main() {
   return (
     <div>
         <Router>
-            <h1>Main</h1>
+            <Header/>
             <Routes>
                 <Route/>
             </Routes>
