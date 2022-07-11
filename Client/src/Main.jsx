@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Header from "../layout/Header"
+import Home from './pages/Home'
 
 function Main() {
   return (
@@ -10,7 +10,7 @@ function Main() {
         <Router>
             <Header/>
             <Routes>
-                <Route/>
+                <Route path='/' element={<Home/>}/>
             </Routes>
         </Router>
     </div>
