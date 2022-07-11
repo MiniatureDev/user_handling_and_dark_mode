@@ -2,11 +2,11 @@
   "name": "temp",
   "version": "1.0.0",
   "description": "meta data for client side develeopment",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "redux": "^4.2.0"
   },
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "parcel": "^2.6.2",
+    "process": "^0.11.10"
   }
 }
