@@ -1,0 +1,17 @@
+.dark {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.light {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.body_main_dark {
+    background-color: rgb(175, 168, 168);
+}
+
+.body_main_light {
+    background-color: aliceblue;
+}

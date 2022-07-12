@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 
 function Access() {
   const [registeredUser, setRegisteredUser] = useState(false);
   return (
-    <div className="container">
+    <div className="container mt-2">
       <div className="row">
         <div className="text-center">
             <div className="text-center">

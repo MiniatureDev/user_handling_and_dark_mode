@@ -29,12 +29,12 @@ function Header() {
                 {}
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="/" class="nav-link px-2 text-white">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="/features" class="nav-link px-2 text-white">
                   Features
                 </a>
               </li>
