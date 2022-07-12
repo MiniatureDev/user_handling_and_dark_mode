@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from 'react'
 
-function SignIn() {
-  
+function SignUp() {
   return (
     <div className="container mt-4">
       <div className="row">
@@ -10,8 +9,25 @@ function SignIn() {
           <body class="text-center">
             <main class="form-signin">
               <form>
-                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
+                <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="User 1"
+                  />
+                  <label for="floatingInput">User ID</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="FirstUserOfUtterlyStupid"
+                  />
+                  <label for="floatingInput">Username</label>
+                </div>
                 <div class="form-floating">
                   <input
                     type="email"
@@ -41,7 +57,7 @@ function SignIn() {
         <div className="col-md-4"></div>
       </div>
     </div>
-  );
+  )
 }
 
-export default SignIn;
+export default SignUp

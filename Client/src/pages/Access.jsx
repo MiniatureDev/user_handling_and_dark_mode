@@ -1,13 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
 function Access() {
   const [registeredUser, setRegisteredUser] = useState(false);
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-12">
+        <div className="text-center">
+            <div className="text-center">
             <label htmlFor=""> Already Registered? </label>
           <button
             className="btn btn-outline-secondary mx-3"
@@ -17,6 +19,9 @@ function Access() {
           >
             Sign In
           </button>
+          </div>
+          <div className="mt-1">
+          <label htmlFor=""> Not Registered? </label>
           <button
             className="btn btn-outline-secondary mx-3"
             onClick={() => {
@@ -25,7 +30,8 @@ function Access() {
           >
             Sign Up
           </button>
-          {registeredUser ? <SignIn /> : <h1>Sign Up</h1>}
+          </div>
+          {registeredUser ? <SignIn /> : <SignUp/>}
         </div>
       </div>
     </div>
