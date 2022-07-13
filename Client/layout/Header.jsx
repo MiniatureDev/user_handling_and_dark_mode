@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { changeMode } from "../src/features/Global";
 
 function Header() {
 
-  const [mode, setMode] = useState(false)
+  // const [mode, setMode] = useState(false)
+  const dispatch = useDispatch()
+  const darkMode = useSelector((state)=>state.darkMode.value)
 
   return (
     <div>
@@ -65,8 +70,9 @@ function Header() {
                   class="bi bi-circle-half"
                   viewBox="0 0 16 16"
                   onClick={() => {
-                    setMode(!mode);
-                    alert(mode)
+                    // setMode(!mode);
+                    // alert(mode)
+                    dispatch(changeMode(!darkMode));
                   }}
                 >
                   <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />

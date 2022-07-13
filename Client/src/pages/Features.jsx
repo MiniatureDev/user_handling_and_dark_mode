@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 
+import { useSelector } from "react-redux";
+
 function Features() {
   
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
+  const darkMode = useSelector((state)=>state.darkMode.value)
 
   return (
     <div className="container">
