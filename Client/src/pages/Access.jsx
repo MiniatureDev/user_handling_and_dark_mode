@@ -2,9 +2,12 @@ import React from "react";
 import { useState } from "react";
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
+import { useSelector } from "react-redux";
 
 function Access() {
   const [registeredUser, setRegisteredUser] = useState(false);
+  const darkMode = useSelector((state) => state.darkMode.value);
+
   return (
     <div className="container mt-2">
       <div className="row">
@@ -12,7 +15,7 @@ function Access() {
             <div className="text-center">
             <label htmlFor=""> Already Registered? </label>
           <button
-            className="btn btn-outline-secondary mx-3"
+            className={darkMode?"btn btn-outline-light mx-3":"btn btn-outline-dark mx-3"}
             onClick={() => {
               setRegisteredUser(true);
             }}
@@ -23,7 +26,7 @@ function Access() {
           <div className="mt-1">
           <label htmlFor=""> Not Registered? </label>
           <button
-            className="btn btn-outline-secondary mx-3"
+            className={darkMode?"btn btn-outline-light mx-3":"btn btn-outline-dark mx-3"}
             onClick={() => {
               setRegisteredUser(false);
             }}

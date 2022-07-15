@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from "react-redux";
 
 function SignUp() {
+  const darkMode = useSelector((state) => state.darkMode.value);
   return (
     <div className="container mt-4">
       <div className="row">
@@ -8,7 +10,7 @@ function SignUp() {
         <div className="col-md-4">
           <body class="text-center">
             <main class="form-signin">
-              <form>
+              <form className="p-3 border border-dark border-3">
                 <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
                 <div class="form-floating">
                   <input
@@ -46,11 +48,11 @@ function SignUp() {
                   />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">
+                <button class={darkMode?"w-100 btn btn-lg btn-dark":"w-100 btn btn-lg btn-primary"} type="submit">
                   Sign in
                 </button>
-              </form>
               <p class="mt-5 mb-3 text-muted">© Utterly Stupid 2022</p>
+              </form>
             </main>
           </body>
         </div>
